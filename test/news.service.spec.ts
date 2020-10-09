@@ -26,15 +26,7 @@ describe('NewsService', () => {
   }]
 
   let mockResponse404;
-  //  = {
-  //   message: `Http failure response for ${newsService.trending_news_api_url} : 404 Not Found`,
-  //   name: 'HttpErrorResponse',
-  //   ok: false,
-  //   status : 404,
-  //   statusText: 'Not Found',
-  //   url: `${newsService.trending_news_api_url}`
-  //  };
- 
+  
   beforeEach(()=>{
 
     TestBed.configureTestingModule({

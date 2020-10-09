@@ -72,24 +72,9 @@ describe('DashboardComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // fit('should contain card component for displaying trending news',fakeAsync(()=>{
-  //   spyOn(newsService,'getTrendingNews').and.callThrough().and.returnValue(of(newsItems));
-  //   fixture.detectChanges();
-    
-  //   let newsCard = fixture.debugElement.query(By.css('app-card'));
-  //   expect(newsCard).toBeTruthy();
-  // }))
 
-  // fit('should handle error 404 when resource not found',fakeAsync(()=>{
-  //   newsService.trending_news_api_url="http://localhost:3000/invalidapi/news";
-  //   spyOn(newsService,'getTrendingNews').and.callThrough().and.returnValue(throwError('404'));
 
-  //   fixture.detectChanges();
-  //   let newsCard = fixture.debugElement.query(By.css('app-card'));
-  //   expect(newsCard).toBeNull();
-  // }))
 
-//ALTERNATIVE WITH STUB
 
 it('should contain card component for displaying trending news',fakeAsync(()=>{
   spyOn(newsService,'getTrendingNews').and.callThrough();//.and.returnValue(of(newsItems));

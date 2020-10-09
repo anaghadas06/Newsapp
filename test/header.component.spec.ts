@@ -4,7 +4,6 @@ import { HeaderComponent } from '../src/app/header/header.component';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { By } from '@angular/platform-browser';
-// import { AppComponent } from 'src/app/app.component';
 
 
 describe('HeaderComponent', () => {
