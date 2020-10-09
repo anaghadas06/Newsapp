@@ -60,7 +60,7 @@ The primary objective of this assignment is to read news using 3rd Party newsapi
 - url (string)
 - urlToImage (string)
 
-4. The boilerplate code contains code files for 5 Components
+4. The application should be designed using 5 Components as listed below:
 	- app
 	- header
 	- dashboard
