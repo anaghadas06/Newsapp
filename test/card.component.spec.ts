@@ -7,7 +7,6 @@ import { CardComponent } from '../src/app/card/card.component';
 import { NewsService } from 'src/app/services/news.service';
 import { News } from 'src/app/models/news';
 import { Observable, throwError, of } from 'rxjs';
-// import { By } from '@angular/platform-browser';
 
 describe('CardComponent', () => {
   let component: CardComponent;
