@@ -26,7 +26,7 @@ describe('NewsService', () => {
   }]
 
   let mockResponse404;
- 
+  
   beforeEach(()=>{
 
     TestBed.configureTestingModule({

@@ -72,6 +72,10 @@ describe('DashboardComponent', () => {
     expect(component).toBeTruthy();
   });
 
+
+
+
+
 it('should contain card component for displaying trending news',fakeAsync(()=>{
   spyOn(newsService,'getTrendingNews').and.callThrough();//.and.returnValue(of(newsItems));
   fixture.detectChanges();

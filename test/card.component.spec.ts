@@ -6,7 +6,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { CardComponent } from '../src/app/card/card.component';
 import { NewsService } from 'src/app/services/news.service';
 import { News } from 'src/app/models/news';
-import { Observable, throwError, of } from 'rxjs';
+import { Observable, throwError, of } from 'rxjs'; 
 
 describe('CardComponent', () => {
   let component: CardComponent;

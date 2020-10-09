@@ -4,6 +4,8 @@ import { AppComponent } from '../src/app/app.component';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
+
+
 describe('AppComponent', () => {
 
   let fixture;  
@@ -16,10 +18,12 @@ describe('AppComponent', () => {
       schemas:[NO_ERRORS_SCHEMA],
       declarations: [
         AppComponent,
+        
       ],
+      
     }); 
 
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed    .createComponent(AppComponent);
     
   }));
 
@@ -47,5 +51,4 @@ describe('AppComponent', () => {
     const footerComponent = fixture.debugElement.nativeElement.querySelector('app-footer');
     expect(footerComponent).toBeTruthy();
   });
-  
 });
