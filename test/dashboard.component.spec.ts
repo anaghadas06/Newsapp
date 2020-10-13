@@ -48,7 +48,7 @@ describe('DashboardComponent', () => {
       imports:[HttpClientTestingModule],
       declarations: [ DashboardComponent ],
       schemas:[NO_ERRORS_SCHEMA],
-      providers:[HttpTestingController,//NewsService
+      providers:[HttpTestingController,
         {
         provide:NewsService,
         useClass:class NewsServiceStub{
@@ -77,7 +77,7 @@ describe('DashboardComponent', () => {
 
 
 it('should contain card component for displaying trending news',fakeAsync(()=>{
-  spyOn(newsService,'getTrendingNews').and.callThrough();//.and.returnValue(of(newsItems));
+  spyOn(newsService,'getTrendingNews').and.callThrough();
   fixture.detectChanges();
   
   let newsCard = fixture.debugElement.query(By.css('app-card'));

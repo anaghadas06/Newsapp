@@ -17,7 +17,7 @@ export class AppPage {
     return element.all(by.css('mat-card'))
   }
   getReadButton() {
-    return element.all(by.css('mat-card mat-card-actions button')).first()  ;//.get(0);
+    return element.all(by.css('mat-card mat-card-actions button')).first();
   }
   getConfirmationMessageText() {
     return element.all(by.css('mat-card small')).first().getText();

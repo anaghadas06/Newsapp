@@ -72,7 +72,7 @@ describe('NewsService', () => {
   it('should throw 404 error from getTrendingNews() function',fakeAsync(()=>{
     newsService.getTrendingNews().subscribe(response=>{ },
     error=>{
-      console.log(error.message)
+      
       expect(error).toBeDefined('should throw error for resource not found')
       expect(error.status).toBe(404,'should respond with status 404')
     });
@@ -121,7 +121,7 @@ describe('NewsService', () => {
     newsService.addNews(newsItem).subscribe(
       response=>{},
       error=>{
-        console.log(error.message)
+        
         expect(error).toBeDefined('should throw error for resource not found')
         expect(error.status).toBe(404,'should respond with status 404')
       }

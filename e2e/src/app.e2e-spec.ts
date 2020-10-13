@@ -38,7 +38,7 @@ describe('workspace-project App', () => {
   it('should add news article to reading list on click of `Read Later` button',()=>{
     let element = page.getReadButton();
     element.click();
-    //let confirmationMessage = page.getConfirmationMessageText();
+    
     browser.sleep(1000);
     expect(page.getConfirmationMessageText()).toEqual('This News Article is Bookmarked');
     

@@ -43,6 +43,7 @@ The primary objective of this assignment is to read news using 3rd Party newsapi
 3. App should be able to load the title and image of all current news in the form of card.
 4. Every card should have `Read Later` button.
 5. As soon as a user clicks on `Read Later` button the full description as well as link of that news should get stored into db.json
+6. `http://localhost:3000/api/v1/news` is the api url for accessing the news api at server running on port 3000
 
 ### Instructions
 

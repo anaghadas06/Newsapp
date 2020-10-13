@@ -88,7 +88,7 @@ describe('CardComponent', () => {
   })
 
   it('should handle error 404 when resource not found when Read Later button is clicked',fakeAsync(()=>{
-    // newsService.trending_news_api_url="http://localhost:3000/invalidapi/news";
+    
     let newsItem : News =  new News();
     newsItem.author = "Times Of India";
     newsItem.title = "Mumbai terror attack mastermind Hafiz Saeed charged by Pakistani court with terror-financing - Times of India",
