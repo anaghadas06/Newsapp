@@ -1,0 +1,35 @@
+{
+    "data" : [
+        {
+            "title": "Ferrari, parent Exor clinch alliance with Apple designer Jony Ive - Reuters",
+            "description": "Italian luxury car maker Ferrari and parent company Exor, the holding vehicle of the Agnelli family, have agreed a long term partnership with Jony Ive, the designer of many of Apple's iconic products, and Marc Newson.",
+             "urlToImage": "https://www.reuters.com/resizer/_JaBLr9RglUvzFAIPtBAFI_kpQ0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/C6IRZW7XKJJ4NH53XNJT6V42O4.jpg",
+             "url": "https://arstechnica.com/gadgets/2021/09/2021-ipad-mini-suffers-from-uneven-jelly-scrolling-in-portrait-mode/"},
+        {
+            "title":"This Tablet Makes It Easy to Zoom With Older Loved Ones",
+            "description":"It requires an expensive subscription, but this device is specially designed for the elderly.",
+            "urlToImage": "https://media.wired.com/photos/613bd9eb2181804a26bb47be/191:100/w_1280,c_limit/Gear-GrandPad_2_SOURCE_GrandPad.png",
+            "url": "https://www.wired.com/review/grandpad-tablet/"},
+
+
+
+        {
+            "title": "Attack of the Hollywood Cliches! Charlie Brooker and Rob Lowe churn out a shoddy tropefest",
+            "description": "It’s got a fine lineup of film stars and critics, but this tedious tour of movie tricks feels like an opportunity missed. What were they all thinking? I have long made peace with the fact that I will never figure Netflix out. Maybe that is the point: Netflix,…",
+            "urlToImage": "https://i.guim.co.uk/img/media/bc878c1e84da0f443cb67b08bf9f7dae907903fb/0_132_3600_2160/master/3600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e121235f48ca5676d26c37f257bdd92b",
+            "url": "https://amp.theguardian.com/tv-and-radio/2021/sep/27/attack-of-the-hollywood-cliches-charlie-brooker-rob-lowe-shoddy-tropefest"},
+
+        
+        {
+            "title": "How Emma Raducanu prevents one mistake from leading to another | Sean Ingle",
+            "description":"New research into performance under pressure among tennis players shows the biggest names do not just rise to the occasion on the biggest pointsEmma Raducanu is already proving a master of changing the narrative. At Wimbledon some questioned her temperament a…",
+            "urlToImage": "https://i.guim.co.uk/img/media/bc01c4471b02acd776a6dba061940d227711e618/0_26_3500_2100/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=85e61766495b56a526f5662e1e75109f",
+            "url": "https://amp.theguardian.com/sport/blog/2021/sep/27/how-emma-raducanu-prevents-one-mistake-from-leading-to-another"},
+        {
+            "title": "Arsenal’s derby delight and Guardiola outsmarts Tuchel – Football Weekly",
+            "description": "Max Rushden, Barry Glendenning, Jacob Steinberg and Jordan Jarrett-Bryan react to Arsenal’s convincing win in the north London derby and the rest of the Premier League actionRate, review, share on Apple Podcasts, Soundcloud, Audioboom, Mixcloud, Acast and Sti…",
+            "urlToImage": "https://i.guim.co.uk/img/media/89c083d9b5183694d6594a2aa2f139c5e433dd8e/0_26_3500_2102/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=11cb7e8ed660e91153855301bfe4fadc",
+            "url": "https://www.theguardian.com/football/audio/2021/sep/27/arsenals-derby-delight-and-pep-outsmarts-tuchel-football-weekly"}
+        
+    ]
+}
