@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="block">
+        <form [formGroup]='signUpForm' (ngSubmit)="register()">
+            <h2>SIGNUP- NEWS APP </h2>
+            <br>
+            <div>
+                <input type="text" name="txtFirstName" formControlName="FirstName" required placeholder="Enter First Name" />
+            </div>
+            <br>
+            <div>
+                <input type="text" placeholder="txtLastName" formControlName="LastName" required placeholder="Enter Last Name" />
+            </div>
+            <br>
+            <div>
+                <input type="email" placeholder="txtEmail" formControlName="Email" required placeholder="Enter EMail" />
+            </div>
+            <br>
+            <div>
+                <input type="password" placeholder="txtPassword" formControlName="Password" required placeholder="Enter Password" />
+            </div>
+            <br>
+            <div>
+                <button (click)="register(signUpForm.value)" [disabled]="signUpForm.invalid">Sign up </button>
+                <button routerLink="/login" routerLinkActive="active"> LogIn </button>
+            </div>
+        </form>
+    </div>
+</div>

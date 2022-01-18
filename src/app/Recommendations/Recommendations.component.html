@@ -1,0 +1,11 @@
+<div class="container-fluid mt-5 ">
+    <div class="row ">
+        <div *ngFor=" let d of searchDisplay" class="col-lg-4 mt-4 mb-4 ">
+            <img src="{{d.urlToImage}} " width=" 100% ">
+            <div class="box">
+                <h5 class=" mt-2 mb-2 ">{{d.title}}</h5>
+                <p>{{d.content}}</p>
+                <a href="{{d.url}} " target="_blank " c lass=" btn btn-#1a237e indigo darkenblue-4 btn-sm mt-2 ">Read more</a>
+            </div>
+        </div>
+    </div>

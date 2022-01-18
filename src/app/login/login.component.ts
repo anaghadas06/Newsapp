@@ -1,39 +1,52 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { EmailValidator, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
+import { DataService } from '../data.service';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  
 
-  constructor(private formbuilder : FormBuilder, private route : Router) { }
+export class LoginComponent implements OnInit {
+  signInForm: any= FormGroup;
+
+
+  constructor(private loginService: LoginService,private service: FormBuilder,private routeservice: Router) { }
 
   ngOnInit(): void {
-    
+
+    this.createLoginform();
+    {
+      Email:['',Validators.compose([Validators.required,Validators.email]) ]
+      Password:['',Validators.required]
+    }
+
+
   }
-  
-  email : FormControl = new FormControl("");
-  password : FormControl = new FormControl("");
-
-  userdata : FormGroup = this.formbuilder.group({
-     email : new FormControl("", Validators.email),
-     password : new FormControl("", Validators.required)
-  })
-
-  
-
-  login()
-  {
-    if(this.userdata.valid){
-      this.route.navigateByUrl("/dashboard");
-    }
-    else{
-      alert("Fill the fields correctly");
-    }
+  login(){
+    this.loginService.sendPostRequest(this.signInForm.value).subscribe((data:any)=>{
+      console.log(data);
+      sessionStorage.setItem("token", data)
+     this.navigatetohome();
+    }, err => {
+      alert('Invalid username/password')
+    })
+    console.log(this.signInForm.value)
   }
 
+  createLoginform(){
+    this.signInForm = this.service.group({
+      Email:[''],
+      Password:['']
+    })
+  }
+  navigatetohome(){
+    this.routeservice.navigate(["home"])
+
+
+  }
 }

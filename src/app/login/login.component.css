@@ -1,18 +1,11 @@
-div
-{
-    margin: 1em;
-    text-align: center;
+.block{
+    justify-content: center;
+    align-items: center;
 }
+    /* form{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
 
-input
-{
-    border-radius: 5px;
-    height: 8vh;
-    width: 20vw;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+    } */

@@ -1,0 +1,14 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "a",
+      "posterPath": "../images/a.jpg",
+      "favourite": false
+    }
+    
+  ],
+  "favourites": [
+
+  ]
+}

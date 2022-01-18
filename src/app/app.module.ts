@@ -1,43 +1,61 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
-import { NewsService } from './Service/news.service';
-
-import {MatCardModule} from '@angular/material/card';
-import { NewsModule } from './Module/news/news.module';
+import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
+import { NewsApiService } from './news-api.service';
+import { RecommendationsComponent } from "./Recommendations/Recommendations.component";
+
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule,
+  MatSidenavModule, MatListModule } from '@angular/material';
+
+import { AppRoutingModule, routingComponents   } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+import { LoginComponent } from './login/login.component';
+import { FavouriteComponent } from './favourites/favourites.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegComponent } from './reg/reg.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { DataService } from './data.service';
+import { AuthGuardService } from './authguard.service';
+import { LoginService } from './login.service';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    DashboardComponent,
+    routingComponents,
+    HomeComponent,
     LoginComponent,
-    SignUpComponent
+    FavouriteComponent,
+    RecommendationsComponent,
+    RegComponent,
+    FilterPipe
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule,
     HttpClientModule,
-    MatFormFieldModule,
-    ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [NewsService,NewsModule],
+  providers: [NewsApiService,DataService,LoginService,AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

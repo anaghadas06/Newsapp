@@ -1,14 +1,30 @@
-<div class="example-container">
-    <mat-form-field appearance="fill">
-      <label>Enter your email</label>
-      <br>
-      <input [formControl]="email"  placeholder="name@gmail.com" >
-      <br><br>
-      <label>Enter Password</label>
-      <br>
-      <input  [formControl]="password">
-    </mat-form-field>
-    <div mat-button color="primary">
-        <button mat-flat-button color="primary"  type="submit" value="Login" onclick="login()">Login</button>
+  <div class="row" style="height: 150px;"></div>
+  <div style="text-align: center;">
+    <div class="container-fluid">
+      <section class="row justify-content-centre">
+        <div class="col-2 col-sm-3 col-md-4"></div>
+        <div class="col-8 col-sm-6 col-md-4" style="border: 1px solid rgba(73, 73, 73, 0.247); border-radius: 25px; background-color: rgba(105, 147, 175, 0.486);">
+          <form [formGroup]='signInForm' class="form-container was-validated">
+            <div>
+              <h2>LOGIN TO NEWS APP</h2>
+              <div class="form-group">
+                <input type="email" placeholder="txtEmail" formControlName="Email" id="email" required placeholder="Enter Email ID" class="form-control"/>
+                <div class="valid-feedback">Validation Success</div>
+                <div class="invalid-feedback">Please enter email</div>
+              </div>
+              <div  class="form-group">
+                <input type="password" placeholder="txtPassword" formControlName="Password" id="pwd"  required placeholder="Enter Password" class="form-control"/>
+                <div class="valid-feedback">Validation Success</div>
+                <div class="invalid-feedback">Please enter password</div>
+              </div>
+              <div>
+                <button (click)="login(signInForm.value)"[disabled]="signInForm.invalid" class="btn btn-primary btn-block"> Login to NewsApp </button>
+                <button  routerLink= "/reg" routerLinkActive="active" class="btn btn-primary btn-block">New User, Register </button>
+              </div> <br>
+            </div>
+          </form>
+        </div>
+        <div class="col-2 col-sm-3 col-md-4"></div>
+      </section>
     </div>
   </div>
